@@ -4,209 +4,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RT CineMass</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="images/rsz_rt_logo.png">
+    <link rel="shortcut icon" href="images/rsz_rt_logo.png" type="image/x-icon">
+    <title>RT CineMass</title>
 </head>
 
 <body>
-
     <header>
-        <h1>RT <span>Cine</span>Mass</h1>
+        <a href="#home">
+            <h1>RT <span>cine</span>Mass</h1>
+        </a>
         <ul>
-            <li><a href="">Raviteja's</a></li>
-            <li><a href="">New Releases</a></li>
-            <li><a href="">Top Hits</a></li>
-            <li><a href="">Programs</a></li>
+            <li><a href="#homeContent" class="active">Home</a></li>
+            <li><a href="#moviesList">Raviteja's</a></li>
+            <li><a href="#moviesList">New Releases</a></li>
+            <li><a href="#moviesList">Top Hits</a></li>
         </ul>
     </header>
-    <section class="homePage">
+    <section id="home">
 
     </section>
-    <section class="homePageCover">
-        <div class="content">
-            <h2>DHAMAKA (2022)</h2>
-            <p>Ravi Teja, Sree Leela</p>
-            <button>
-                <a href="https://drive.google.com/file/d/15JnMkN8gOOILgndbAbFpWBSV4oV4zlZ7/view?usp=sharing"
-                    target="_blank">Watch
-                    Now</a>
-            </button>
+    <section id="homeContent">
+        <div class="homeContentContent">
+            <h1>DHAMAKA</h1>
+            <p>Swamy and Anand who look exactly the same, come from different backgrounds. Under dicey circumstances
+                Pranavi, a young and pretty girl falls in love with both of them. How will Swamy and Anand solve their
+                problems?
+            </p>
+
+            <a href="https://drive.google.com/file/d/15JnMkN8gOOILgndbAbFpWBSV4oV4zlZ7/view?usp=sharing"><button>Watch
+                    Now</button></a>
+
         </div>
     </section>
-    <section class="moviesSEC">
-        <div class="movieSection" id="raviteja">
-            <h1>RAVI TEJA'S</h1>
-            <div class="moviesContainer">
+    <section id="moviesList">
+        <div class="moviesListSection">
+            <h1>RAVITEJA'S</h1>
+            <ul>
                 <a href="https://drive.google.com/file/d/15JnMkN8gOOILgndbAbFpWBSV4oV4zlZ7/view?usp=sharing"
                     target="_blank">
-                    <div class="movieItem">
-                        <div class="movieImage">
-                            <img src="images/Dhamaka.jpeg" alt="Dhamaka">
-                        </div>
-                        <div class="movieDescription">
-                            <h3>Dhamaka</h3>
-                            <p>2022</p>
-                        </div>
-                    </div>
+                    <li>
+                        <p class="img" id="image1"></p>
+                        <p>Dhamaka</p>
+                        <p>2022</p>
+                    </li>
                 </a>
 
                 <a href="https://drive.google.com/file/d/13hY9MLDKoPE24RLsuXueXQnd5I4lC9pU/view?usp=sharing"
                     target="_blank">
-                    <div class="movieItem">
-                        <div class="movieImage">
-                            <img src="images/kick2.jpg" alt="Dhamaka">
-                        </div>
-                        <div class="movieDescription">
-                            <h3>Kick 2</h3>
-                            <p>2015</p>
-                        </div>
-                    </div>
+                    <li>
+                        <p class="img" id="image2"></p>
+                        <p>Kick 2</p>
+                        <p>2015</p>
+                    </li>
                 </a>
 
                 <a href="https://drive.google.com/file/d/16jJFe5f5LAUGxAC4GGhoALcXUwctoh_0/view?usp=sharing"
                     target="_blank">
-                    <div class="movieItem">
-                        <div class="movieImage">
-                            <img src="images/dongalamta.jpg" alt="Dhamaka">
-                        </div>
-                        <div class="movieDescription">
-                            <h3>Dongala Muta</h3>
-                            <p>2011</p>
-                        </div>
-                    </div>
+                    <li>
+                        <p class="img" id="image3"></p>
+                        <p>Dongala Muta</p>
+                        <p>2011</p>
+                    </li>
                 </a>
 
                 <a href="https://new2.gdflix.cfd/zfile/yuei5RTbCW" target="_blank">
-                    <div class="movieItem">
-                        <div class="movieImage">
-                            <img src="images/ntag.jpg" alt="Dhamaka">
-                        </div>
-                        <div class="movieDescription">
-                            <h3>Naa Autograph</h3>
-                            <p>2004</p>
-                        </div>
-                    </div>
+                    <li>
+                        <p class="img" id="image4"></p>
+                        <p>Naa Autograph</p>
+                        <p>2004</p>
+                    </li>
                 </a>
-            </div>
-
+            </ul>
         </div>
 
-        <div class="movieSection" id="NR">
+        <div class="moviesListSection">
             <h1>NEW RELEASES</h1>
-            <div class="moviesContainer" id="raviteja">
+            <ul>
                 <a href="https://gofile.io/d/DFiE4M" target="_blank">
-                    <div class="movieItem">
-                        <div class="movieImage">
-                            <img src="images/salaar.png" alt="Dhamaka">
-                        </div>
-                        <div class="movieDescription">
-                            <h3>Salaar - Cease Fire</h3>
-                            <p>2023</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://gofile.io/d/rCAbKz" target="_blank">
-                    <div class="movieItem">
-                        <div class="movieImage">
-                            <img src="images/tilluSquare.jpeg" alt="Dhamaka">
-                        </div>
-                        <div class="movieDescription">
-                            <h3>Tillu Square</h3>
-                            <p>2024</p>
-                        </div>
-                    </div>
+                    <li>
+                        <p class="img" id="image5"></p>
+                        <p>Salaar - Cease Fire</p>
+                        <p>2023</p>
+                    </li>
                 </a>
 
                 <a href="https://gofile.io/d/qvpTlp" target="_blank">
-                    <div class="movieItem">
-                        <div class="movieImage">
-                            <img src="images/gunturKaram.jpg" alt="Dhamaka">
-                        </div>
-                        <div class="movieDescription">
-                            <h3>Guntur Kaaram</h3>
-                            <p>2023</p>
-                        </div>
-                    </div>
+                    <li>
+                        <p class="img" id="image6"></p>
+                        <p>Guntur Karam</p>
+                        <p>2024</p>
+                    </li>
+                </a>
+
+                <a href="https://gofile.io/d/rCAbKz" target="_blank">
+                    <li>
+                        <p class="img" id="image7"></p>
+                        <p>Tillu Square</p>
+                        <p>2024</p>
+                    </li>
                 </a>
 
                 <a href="https://drive.google.com/file/d/12Qjm-E3noYDkyKqm6hvrdW_xytEJDY4m/view?usp=sharing"
                     target="_blank">
-                    <div class="movieItem">
-                        <div class="movieImage">
-                            <img src="images/hanuman.jpg" alt="Dhamaka">
-                        </div>
-                        <div class="movieDescription">
-                            <h3>Hanuman</h3>
-                            <p>2023</p>
-                        </div>
-                    </div>
+                    <li>
+                        <p class="img" id="image8"></p>
+                        <p>Hanuman</p>
+                        <p>2024</p>
+                    </li>
                 </a>
-            </div>
-
+            </ul>
         </div>
 
-        <div class="movieSection" id="TH">
+        <div class="moviesListSection">
             <h1>TOP HITS</h1>
-            <div class="moviesContainer">
-
+            <ul>
                 <a href="https://gofile.io/d/5tC1qX" target="_blank">
-                    <div class="movieItem">
-                        <div class="movieImage">
-                            <img src="images/east.jpeg" alt="Dhamaka">
-                        </div>
-                        <div class="movieDescription">
-                            <h3>Beast</h3>
-                            <p>2022</p>
-                        </div>
-                    </div>
+                    <li>
+                        <p class="img" id="image9"></p>
+                        <p>Beast</p>
+                        <p>2022</p>
+                    </li>
                 </a>
 
                 <a href="https://gofile.io/d/MbXs4Q" target="_blank">
-                    <div class="movieItem">
-                        <div class="movieImage">
-                            <img src="images/don.jpeg" alt="Dhamaka">
-                        </div>
-                        <div class="movieDescription">
-                            <h3>College Don</h3>
-                            <p>2022</p>
-                        </div>
-                    </div>
+                    <li>
+                        <p class="img" id="image10"></p>
+                        <p>College Don</p>
+                        <p>2022</p>
+                    </li>
                 </a>
 
                 <a href="https://gofile.io/d/XiJdKp" target="_blank">
-                    <div class="movieItem">
-                        <div class="movieImage">
-                            <img src="images/titanic.jpg" alt="Dhamaka">
-                        </div>
-                        <div class="movieDescription">
-                            <h3>Titanic</h3>
-                            <p>1997</p>
-                        </div>
-                    </div>
+                    <li>
+                        <p class="img" id="image11"></p>
+                        <p>Titanic</p>
+                        <p>1997</p>
+                    </li>
                 </a>
 
                 <a href="https://new2.gdflix.cfd/zfile/5W2dSbuFC8" target="_blank">
-                    <div class="movieItem">
-                        <div class="movieImage">
-                            <img src="images/jaichiranjeeva.jpg" alt="Dhamaka">
-                        </div>
-                        <div class="movieDescription">
-                            <h3>Jai Chiranjeeva</h3>
-                            <p>2005</p>
-                        </div>
-                    </div>
+                    <li>
+                        <p class="img" id="image12"></p>
+                        <p>Jai Chiranjeeva</p>
+                        <p>2005</p>
+                    </li>
                 </a>
-
-            </div>
-            <a href="" id="link">...</a>
-
+            </ul>
         </div>
     </section>
-
 </body>
-
-
 
 </html>
