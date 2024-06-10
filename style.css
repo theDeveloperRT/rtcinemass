@@ -1,213 +1,257 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --darkColor: #101010;
+    --darkShade: #1D1D1D;
+    --hoverColor: #FF2A00;
+}
 
 * {
-    margin: 0;
     padding: 0;
-    font-family: 'poppins';
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
+    box-sizing: border-box;
     width: 100vw;
     height: 100vh;
-    box-sizing: border-box;
     overflow-x: hidden;
-    background-color: #121212;
 }
 
 header {
-    padding: 20px;
+    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
+    padding: 15px 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
     position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #121212;
-    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
-    z-index: 10;
+    z-index: 2;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-header h1 {
+header a {
     width: 50%;
+    padding-left: 20px;
+    text-decoration: none;
     color: white;
 }
 
-header h1 span{
-    color: orange;
+header a h1 {
+    font-size: 36px;
+}
+
+header a h1 span{
+    color: var(--hoverColor);
 }
 
 header ul {
+    width: 50%;
     display: flex;
     flex-direction: row;
     list-style: none;
-    width: 50%;
     gap: 20px;
     align-items: center;
     justify-content: center;
 }
 
-header ul li {
-    font-weight: 600;
+header ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.active{
+    color: var(--hoverColor);
 }
 
 header ul li a:hover {
-    color: orange;
-}
-
-ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
+    color: var(--hoverColor);
 }
 
 section {
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
+    max-height: fit-content;
+    background-color: var(--darkColor);
+    padding-top: 80px;
 }
 
-.homePage {
-    height: 85%;
-    width: 100%;
+#home {
+    background-image: url(images/Dhamaka.jpeg);
     background-repeat: no-repeat;
-    background-position: 0px -25px;
+    background-position: top;
     background-size: cover;
-    background-image: url(images/dmk.jpg);
 }
 
-.homePageCover {
+#homeContent {
+    background-color: rgba(0, 0, 0, 0.85);
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 85%;
-    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+}
+
+.homeContentContent {
+    width: 30%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.homeContentContent h1 {
     color: white;
+    font-size: 36px;
+    letter-spacing: 5px;
 }
 
-.homePageCover .content {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.homePageCover .content h2 {
-    font-size: 40px;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    letter-spacing: 1px;
-}
-
-.homePageCover .content p {
-    width: 100%;
-    text-align: center;
-    margin: 0;
+.homeContentContent p {
+    color: gray;
     margin-top: -10px;
-    opacity: 0.8;
-    font-size: 18px;
-    letter-spacing: 1px;
 }
 
-.homePageCover .content button {
-    margin: 0;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    margin-top: 15px;
-}
-
-.homePageCover .content button a {
-    padding: 10px 25px;
-    color: black;
-}
-
-section .movieSection h1 {
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    color: orange;
-    margin-top: 20px;
-}
-
-.moviesContainer {
-    width: 80%;
-    padding: 10px 60px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
-    margin: auto;
+.homeContentContent a {
+    text-decoration: none;
     margin-top: 10px;
 }
 
-.movieItem {
-    width: 250px;
-    height: 330px;
-    padding: 10px;
-    overflow: hidden;
+.homeContentContent a button {
     cursor: pointer;
+    height: 50px;
+    width: 200px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--hoverColor);
+    color: white;
+    border-radius: 15px;
+}
+
+.homeContentContent a button:hover{
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.moviesListSection {
+    width: 100%;
+}
+
+#moviesList .moviesListSection h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: var(--hoverColor);
+    letter-spacing: 10px;
+}
+
+#moviesList .moviesListSection ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+
+}
+
+#moviesList .moviesListSection ul a {
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-    background-color: rgba(0, 0, 0, 0.5);
     transition-duration: 0.2s;
+}
+
+#moviesList .moviesListSection ul a li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 280px;
+    height: 300px;
+    overflow: hidden;
+    color: white;
+    background-color: var(--darkShade);
+    background-color: rgba(0, 0, 0, 0.5);
 
 }
 
-.movieItem:hover {
+#moviesList .moviesListSection ul a:hover {
     transform: translateY(-20px);
 }
 
-.movieImage {
-    width: 250px;
-    height: 280px;
-    overflow: hidden;
-}
-
-.movieImage img {
+#moviesList .moviesListSection ul a li .img {
     width: 100%;
+    height: 240px;
+    background-position: top;
+    background-size: cover;
 }
 
-.movieDescription {
-    width: 100%;
-    text-align: center;
-    color: white;
-    height: 50px;
-    margin-top: 5px;
-}
-
-button {
-    padding: 10px;
-    width: 200px;
-    font-size: 18px;
+#moviesList .moviesListSection ul a li p:nth-child(2) {
     font-weight: bold;
-    text-align: center;
-    float: right;
-    margin-right: 5%;
-    margin-top: 20px;
-    background-color: orange;
+    font-size: 22px;
 }
 
-.movieSection {
-    width: 100%;
-    height: fit-content;
+#moviesList .moviesListSection ul a li p:nth-child(3) {
+    font-size: 14px;
+    color: gray;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+#image1 {
+    background-image: url(images/Dhamaka.jpeg);
 }
 
-#link {
-    color: #121212;
+#image2 {
+    background-image: url(images/kick2.jpg);
+}
+
+#image3 {
+    background-image: url(images/dongalamuta.jpg);
+}
+
+#image4 {
+    background-image: url(images/naaATG.jpg);
+}
+
+#image5 {
+    background-image: url(images/salaar.png);
+}
+
+#image6 {
+    background-image: url(images/gunturKaram.jpg);
+}
+
+#image7 {
+    background-image: url(images/tilluSquare.jpeg);
+}
+
+#image8 {
+    background-image: url(images/hanuman.jpeg);
+}
+
+#image9 {
+    background-image: url(images/beast.jpg);
+}
+
+#image10 {
+    background-image: url(images/don.jpeg);
+}
+
+#image11 {
+    background-image: url(images/titanic.jpg);
+}
+
+#image12 {
+    background-image: url(images/jaichiranjeeva.jpg);
 }
