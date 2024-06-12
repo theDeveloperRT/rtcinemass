@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="">
         <a href="#home">
             <h1>RT <span>cine</span>Mass</h1>
         </a>
@@ -153,6 +153,18 @@
             </ul>
         </div>
     </section>
+
+    <footer>
+        <p>copyright &copy; RT CineMass 2024. All Rights Reversed</p>
+        <p>Designed by RT Web & App Developers</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
 </body>
 
 </html>
