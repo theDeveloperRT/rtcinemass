@@ -24,12 +24,13 @@ header {
     flex-direction: row;
     align-items: center;
     width: 100%;
-    padding: 15px 10px;
-    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px 15px;
+    /* background-color: rgba(0, 0, 0, 0.4); */
     color: white;
     position: fixed;
     z-index: 2;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    transition-duration: 0.2s;
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); */
 }
 
 header a {
@@ -43,7 +44,7 @@ header a h1 {
     font-size: 36px;
 }
 
-header a h1 span{
+header a h1 span {
     color: var(--hoverColor);
 }
 
@@ -65,7 +66,22 @@ header ul li a {
     padding: 10px;
 }
 
-.active{
+.sticky {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
+
+.sticky a {
+    color: black;
+}
+
+.active {
+    color: var(--hoverColor);
+}
+
+.sticky .active {
     color: var(--hoverColor);
 }
 
@@ -100,23 +116,25 @@ section {
 }
 
 .homeContentContent {
-    width: 30%;
+    width: 40%;
     padding-left: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+    margin-top: 50px;
 }
 
 .homeContentContent h1 {
     color: white;
-    font-size: 36px;
+    font-size: 50px;
     letter-spacing: 5px;
 }
 
 .homeContentContent p {
     color: gray;
     margin-top: -10px;
+    font-size: 20px;
 }
 
 .homeContentContent a {
@@ -137,7 +155,7 @@ section {
     border-radius: 15px;
 }
 
-.homeContentContent a button:hover{
+.homeContentContent a button:hover {
     background-color: rgba(255, 0, 0, 0.8);
 }
 
@@ -254,4 +272,82 @@ section {
 
 #image12 {
     background-image: url(images/jaichiranjeeva.jpg);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0px;
+    flex-wrap: wrap;
+}
+
+footer p {
+    width: 49%;
+    color: white;
+}
+
+footer p:nth-child(1) {
+    text-align: left;
+    padding-left: 10px;
+}
+
+footer p:nth-child(2) {
+    text-align: right;
+    padding-right: 10px;
+}
+
+@media screen and (max-width:426px) {
+    header {
+        width: 100%;
+        padding: 15px;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header a {
+        width: 100%;
+    }
+
+    #homeContent .homeContentContent {
+        width: 90%;
+    }
+
+    #homeContent .homeContentContent h1 {
+        font-size: 35px;
+    }
+
+    #homeContent .homeContentContent p {
+        font-size: 16px;
+    }
+
+    #moviesList .moviesListSection h1 {
+        font-size: 30px;
+    }
+
+    footer {
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    footer p:nth-child(1) {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    footer p:nth-child(2) {
+        text-align: center;
+        padding-right: 0px;
+    }
 }
